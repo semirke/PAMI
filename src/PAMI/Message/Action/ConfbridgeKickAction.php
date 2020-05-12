@@ -53,10 +53,11 @@ class ConfbridgeKickAction extends ActionMessage
      *
      * @return void
      */
-    public function __construct($channel, $conference)
+    public function __construct($conference, $channel)
     {
         parent::__construct('ConfbridgeKick');
-        $this->setKey('Channel', $channel);
+
         $this->setKey('Conference', $conference);
+        $this->setKey('Channel', $channel);        
     }
 }
