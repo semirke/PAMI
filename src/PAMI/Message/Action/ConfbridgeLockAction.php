@@ -51,7 +51,7 @@ class ConfbridgeLockAction extends ActionMessage
      *
      * @return void
      */
-    public function __construct($channel, $conference)
+    public function __construct($conference)
     {
         parent::__construct('ConfbridgeLock');
         $this->setKey('Conference', $conference);

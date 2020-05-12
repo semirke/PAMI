@@ -47,12 +47,11 @@ class ConfbridgeUnlockAction extends ActionMessage
     /**
      * Constructor.
      *
-     * @param string $channel Channel to be muted.
      * @param string $conference Conference on which to act.
      *
      * @return void
      */
-    public function __construct($channel, $conference)
+    public function __construct($conference)
     {
         parent::__construct('ConfbridgeUnlock');
         $this->setKey('Conference', $conference);
